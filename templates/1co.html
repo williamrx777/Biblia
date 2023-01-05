@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br><br>
+<h1>1 carta aos Corintios</h1><br><br>
+{% for ca in list %}
+<button><a href="/biblia/1co/{{ca}}">{{ca}}</a></button>
+{% endfor %}
+{% endblock %}

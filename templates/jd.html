@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br><br>
+<h1>Livro de Judas</h1><br><br>
+{% for ca in list %}
+<button><a href="/biblia/jd/{{ca}}">{{ca}}</a></button>
+{% endfor %}
+
+{% endblock %}

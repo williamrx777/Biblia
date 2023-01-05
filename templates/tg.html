@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br><br>
+<h1>Carta de Tiago</h1><br><br>
+{% for ca in list %}
+<button><a href="/biblia/tg/{{ca}}">{{ca}}</a></button>
+{% endfor %}
+
+{% endblock %}

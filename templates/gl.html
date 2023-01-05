@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br><br>
+<h1>Carta aos Galatas</h1><br><br>
+{% for ca in list %}
+<button><a href="/biblia/gl/{{ca}}">{{ca}}</a></button>
+{% endfor %}
+
+{% endblock %}
+

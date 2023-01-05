@@ -41,29 +41,10 @@ button{
     color: white;
 }
 
-nav{
-    display: flex;
-    background-color: rgb(46, 172, 231);
-}
-.nav__tabela{
-    width: 100%;
-    background-color: rgb(46, 172, 231);
-    
-}
-.nav__corpo{
-    background-color: rgb(46, 172, 231);
-}
-.nav__th{
-    color: rgb(46, 172, 231);
-}
-.nav__td{
-    background-color: rgb(46, 172, 231);
-}
-#livro{
-  max-width: 100%;
-  display: flex;
-  flex-wrap: wrap;  
-}
+
+
+
+
 h1 , h2 {
     font-size: 40px;
     text-align: center;
@@ -97,16 +78,8 @@ a{
 }
 .sidebar{
     margin: 10px 10% 10px 10%;
-    color: blueviolet;
-}
-.container__sidebar{
-    
-    color: aqua;
-}
-.content__sidebar{
-    margin-left: 30px;
-    color: rgb(56, 195, 200);
-}
+
+
 footer{
     color: brown;
 }

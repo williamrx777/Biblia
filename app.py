@@ -281,7 +281,8 @@ def biblia(nome=None,capitulo=None):
     biblia = requests.get(f'https://bible-api.com/{livro}{capitulo}')
     resultado = biblia.json()
     vi = nome
+    vs = capitulo
     ve = resultado['text']
-    return render_template('biblia.html',vi=vi,ve=ve,livro=livro,capitulo=capitulo)
+    return render_template('biblia.html',vi=vi,vs=vs,ve=ve,livro=livro,capitulo=capitulo)
 if __name__=='__name__':
     app.run(debug=True)

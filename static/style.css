@@ -8,19 +8,14 @@ header{
     max-width: 100%;
     padding: 15px;
 }
-.header__container,
-.row__header {
-    border: 1px solid;
-    color: white;
-    
-}
+
 
 .header__content {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid;
-    color: white;
+    
+    
     
 }
 #logo img{
@@ -50,13 +45,11 @@ h1 , h2 {
     text-align: center;
     color: rgb(46, 172, 231);
 }
-p{
+p {
     max-width: 100%;
     text-align: center;
     font-family: sans-serif;
     font-weight:400
-    font-size: 24px;
-    padding: 10px;
 }
 .txt{
     font-family: sans-serif;
@@ -79,7 +72,7 @@ a{
 .sidebar{
     margin: 10px 10% 10px 10%;
 
-
+}
 footer{
     color: brown;
 }
@@ -200,3 +193,14 @@ iframe {
    }
 
 }
+
+   body {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  body.dark-mode {
+    background-color: #000;
+    color: #fff;
+  }
+

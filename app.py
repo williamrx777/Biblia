@@ -278,7 +278,7 @@ def apocalipse():
 def biblia(nome=None,capitulo=None):
     livro = nome
     capitulo = capitulo
-    biblia = requests.get(f'https://bible-api.com/{livro}{capitulo}')
+    biblia = requests.get(f'https://bible-api.com/{livro}{capitulo}?translation=almeida')
     resultado = biblia.json()
     vi = nome
     vs = capitulo

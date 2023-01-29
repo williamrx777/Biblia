@@ -274,14 +274,14 @@ def judas():
 def apocalipse():
     list = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22]
     return render_template('ap.html',list=list)
-@app.route('/biblia/<nome>/<capitulo>')
+@app.route('/biblia/<nome><capitulo>')
 def biblia(nome=None,capitulo=None):
     livro = nome
     capitulo = capitulo
-    biblia = requests.get(f'https://www.abibliadigital.com.br/api/verses/nvi/{livro}/{capitulo}')
+    biblia = requests.get(f'https://bible-api.com/{livro}{capitulo}')
     resultado = biblia.json()
-    rr = resultado['book']
-    ve = resultado['verses']
-    return render_template('biblia.html',rr=rr,ve=ve,livro=livro,capitulo=capitulo)
+    vi = nome
+    ve = resultado['text']
+    return render_template('biblia.html',vi=vi,ve=ve,livro=livro,capitulo=capitulo)
 if __name__=='__name__':
     app.run(debug=True)

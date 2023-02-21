@@ -2,12 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo</title>
     <link rel="stylesheet" href="/static/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <title>Biblia Sagrada</title>
 </head>
 <body>
+    <header>
+        <div class="header__container">
+         <div class="row__header">
+             <div class="header__content">
+                <div id="logo">
+                    <img src="/static/biblia.jpg" alt="logo">
+                </div>
+          </div>
+         </div>
+        </div>
+    </header>
+    <h2 class="titulo">Capitulos</h2>
+    <nav>
+        <table class="nav__tabela">
+            <tbody class="nav__corpo">
+                <th class="nav__th">
+                    <td class="nav__td">
+                     <div id="livro">
+    <ul>
     {% block content %}
     {% endblock %}
+    </ul>
+</div>
+</td>
+</th>
+</tbody>
+</table>
+</nav>
 </body>
 </html>

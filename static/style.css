@@ -8,15 +8,20 @@ header{
     max-width: 100%;
     padding: 15px;
 }
+.header__container,
+.row__header {
+    border: 1px solid;
+    color: white;
 
+}
 
 .header__content {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
-    
-    
+    border: 1px solid;
+    color: white;
+
 }
 #logo img{
     width: 50px;
@@ -24,9 +29,7 @@ header{
 }
 
 input {
-    display: flex;
-    width: 100%;
-
+    width: 60%;
 }
 
 button{
@@ -36,16 +39,40 @@ button{
     color: white;
 }
 
+nav{
+    display: flex;
+    background-color: rgb(46, 172, 231);
+}
+.nav__tabela{
+    width: 100%;
+    background-color: rgb(46, 172, 231);
+
+}
+.nav__corpo{
+    background-color: rgb(46, 172, 231);
+}
+.nav__th{
+    color: rgb(46, 172, 231);
+}
+.nav__td{
+    background-color: rgb(46, 172, 231);
+}
+#livro{
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
 h1 , h2 {
-    font-size: 40px;
     text-align: center;
     color: rgb(46, 172, 231);
 }
-p {
+p{
     max-width: 100%;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight:400
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
 }
 .txt{
     font-family: sans-serif;
@@ -55,11 +82,11 @@ p {
     margin-bottom: 10px;
 }
 a{
-   
+
     text-decoration: none;
     color: white;
     max-width: 100%;
-    padding: 50px; 
+    padding: 15px;
     font-family: sans-serif;
     font-size: 20px;
     font-weight: 300;
@@ -67,7 +94,15 @@ a{
 }
 .sidebar{
     margin: 10px 10% 10px 10%;
+    color: blueviolet;
+}
+.container__sidebar{
 
+    color: aqua;
+}
+.content__sidebar{
+    margin-left: 30px;
+    color: rgb(56, 195, 200);
 }
 footer{
     color: brown;
@@ -78,9 +113,9 @@ footer{
 .footer__content{
     padding: 10px;
     color: rgb(46, 172, 231);
-    
+
 }
- 
+
 .texto{
     color: black;
 }
@@ -89,7 +124,7 @@ footer{
     color: aquamarine;
 }
 .content__texto{
-    
+
     color: black;
     padding: 10px;
 }
@@ -97,7 +132,7 @@ ul{
    display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    
+
 }
 
 .word p{
@@ -126,9 +161,9 @@ iframe {
         margin-left: 380px;
         max-width: 100%;
         max-height: 100%;
-    } 
-    
-    
+    }
+
+
 }
 
 @media screen and (max-width:1024px) {
@@ -153,17 +188,17 @@ iframe {
         max-width: 100%;
         max-height: 100%;
     }
-    
+
 }
 
 
-@media  screen and (max-width:768px){    
+@media  screen and (max-width:768px){
     iframe {
         margin-left: 150px;
         max-width: 100%;
         max-height: 100%;
     }
-    
+
 }
 
 @media screen and (max-width:600px) {
@@ -187,16 +222,4 @@ iframe {
     max-height: 100%;
     margin-left: 0;
    }
-
 }
-
-   body {
-    background-color: #fff;
-    color: #000;
-  }
-  
-  body.dark-mode {
-    background-color: #000;
-    color: #fff;
-  }
-

@@ -1,27 +1,31 @@
-{% extends 'base.html' %}
-
-{% block content %}
-<header>
-    <div class="header__container">
-        <div class="row__header">
-            <div class="header__content">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblia Online</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <div class="header__container">
+         <div class="row__header">
+             <div class="header__content">
                 <div id="logo">
-                    <h1>Biblia Online</h1>
+                    <img src="/static/biblia.jpg" alt="logo">
                 </div>
-                <button id="dark-mode-toggle">Toggle Dark Mode</button>
-                 <form action="#" method="post">
-                     <input type="text" name="nome" placeholder="livro ">
-                     <input type="text" name="capitulo" placeholder="capitulo ex 1 verso 1-3">
-                     <button class="btn btn-primary" value="submit" type="submit" >busca</button>
-                 </form>
           </div>
          </div>
         </div>
     </header>
-
-    <h2 class="h2">Antigo testamento</h2>
+    <h2 class="titulo">Antigo testamento</h2>
     <nav>
-                     <div class="container container-fluid">
+        <table class="nav__tabela">
+            <tbody class="nav__corpo">
+                <th class="nav__th">
+                    <td class="nav__td">
+                     <div id="livro">
                         <a class="btn btn-secondary" href="/biblia/gn">GENESES</a>
                         <a class="btn btn-secondary" href="/biblia/ex">EXODO</a>
                         <a class="btn btn-secondary" href="/biblia/lv">LEVITICOS</a>
@@ -61,13 +65,16 @@
                         <a class="btn btn-secondary" href="/biblia/ag">AGEU</a>
                         <a class="btn btn-secondary" href="/biblia/zc">ZACARIAS</a>
                         <a class="btn btn-secondary" href="/biblia/ml">MALAQUIAS</a>
-                     </div>
-
+ </div>
+                    </td>
+                </th>
+            </tbody>
+        </table>
     </nav>
     <div class="sidebar">
         <div class="container__sidebar">
             <div class="content__sidebar">
-                <p class="h5">
+                <p>
                     2 Timóteo 3:16-17
 
 16Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça,
@@ -78,9 +85,12 @@
         </div>
     </div>
     <article>
-        <h2 class="h2">Novo testamento</h2>
+        <h2 class="titulo">Novo testamento</h2>
         <table class="nav__tabela">
-                     <div class="container container-fluid">
+            <tbody class="nav__corpo">
+                <th class="nav__th">
+                    <td class="nav__td">
+                     <div id="livro">
                         <a class="btn btn-success" href="/biblia/mt">MATEUS</a>
                         <a class="btn btn-success" href="/biblia/mc">MARCOS</a>
                         <a class="btn btn-success" href="/biblia/lc">LUCAS</a>
@@ -108,18 +118,22 @@
                         <a class="btn btn-success" href="/biblia/3jo">3 JOÃO</a>
                         <a class="btn btn-success" href="/biblia/jd">JUDAS</a>
                         <a class="btn btn-success" href="/biblia/ap">APOCAPLIPSE</a>
-                     </div>
+             </div>
+                    </td>
+                </th>
+            </tbody>
         </table>
     </article>
     <footer>
         <div class="footer__container">
         <div class="row__footer">
             <div class="footer__content">
-                <p class="h5">Biblia - © 2012</p>
-                <p class="h5">Autor William</p>
-                <p class="h5">Gloria a Deus</p>
+                <p class="txt">Biblia - © 2012</p>
+                <p class="txt">Autor William</p>
+                <p class="txt">Gloria a Deus</p>
             </div>
         </div>
         </div>
     </footer>
-{% endblock %}
+</body>
+</html>

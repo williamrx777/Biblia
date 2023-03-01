@@ -16,10 +16,11 @@
     <div class="container d-flex align-items-center flex-column justify-content-center">
         <div class="row p-3 " >
        <h1 class="h1 p-3">{{vi}}{{vs}}</h1>
-            <ol>
-                <p class="h1 p-3">{{ve}}</p>
-            </ol>
-
+ <ol>
+      {% for verse in resultado["verses"] %}
+        <li>{{ verse["number"] }} {{ verse["text"] }}</li>
+      {% endfor %}
+    </ol>
 </div>
 
      </div>

@@ -283,6 +283,6 @@ def biblia(nome=None,capitulo=None):
     vi = nome
     vs = capitulo
     ve = resultado['text']
-    return render_template('biblia.html',vi=vi,vs=vs,ve=ve,livro=livro,capitulo=capitulo)
+    return render_template('biblia.html',vi=vi,vs=vs,ve=ve,livro=livro,capitulo=capitulo,resultado=resultado)
 if __name__ == "__main__":
     app.run(debug=True)

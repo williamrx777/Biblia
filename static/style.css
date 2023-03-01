@@ -1,8 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 header{
     max-width: 100%;
@@ -66,7 +62,7 @@ h1 , h2 {
     text-align: center;
     color: rgb(46, 172, 231);
 }
-p{
+p , li{
     max-width: 100%;
     text-align: center;
     font-family: sans-serif;

@@ -4,11 +4,6 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET','POST'])
 def index():
-    if request.method == 'POST':
-        biblia = request.form['nome']
-        capitulo = request.form['capitulo']
-        return redirect(url_for('biblia',nome=biblia,capitulo=capitulo))
-    else:
         return render_template('index.html')
 @app.route('/biblia/gn')
 def genesis():
